@@ -1,7 +1,8 @@
 class MoviesController < ApplicationController
 
   def movie_params
-    params.require(:movie).permit(:title, :rating, :description, :release_date)
+    #Remember to add `:director` to the list of movie attributes in the `def movie_params` method in `movies_controller.rb`
+    params.require(:movie).permit(:title, :rating, :description, :release_date,:director)
   end
 
   def show
