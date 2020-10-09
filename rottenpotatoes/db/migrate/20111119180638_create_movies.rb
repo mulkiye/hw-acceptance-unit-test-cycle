@@ -13,7 +13,4 @@ class CreateMovies < ActiveRecord::Migration
   def down
     drop_table :movies
   end
-  #The director field should be a string containing the name of the movie’s director. 
-  add_column :movies, :director, :string
-  
 end
